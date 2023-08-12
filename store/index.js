@@ -13,11 +13,11 @@ export const mutations = {
     ];
   },
 
-  REMOVE_TASK(state, todo) {
+  REMOVE_TODO(state, todo) {
     state.todos.splice(state.todos.indexOf(todo), 1);
   },
 
-  TOGGLE_TASK(state, todo) {
+  TOGGLE_TODO(state, todo) {
     todo.done = !todo.done;
   },
 };
