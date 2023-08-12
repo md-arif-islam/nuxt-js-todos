@@ -69,13 +69,13 @@ main .create-new button {
   cursor: pointer;
 }
 
-main .tasks {
+main .todos {
   width: 100%;
   max-width: 480px;
   margin-top: 2rem;
 }
 
-main .tasks .task {
+main .todos .todo {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -85,11 +85,11 @@ main .tasks .task {
   margin-bottom: 1rem;
 }
 
-main .tasks .task .buttons {
+main .todos .todo .buttons {
   min-width: fit-content;
 }
 
-main .tasks .task button {
+main .todos .todo button {
   appearance: none;
   border: none;
   outline: none;
@@ -104,15 +104,15 @@ main .tasks .task button {
   cursor: pointer;
 }
 
-main .tasks .task button.delete {
+main .todos .todo button.delete {
   background-color: crimson;
   color: #eee;
 }
 
-.tasks .task.is-complete {
+.todos .todo.is-complete {
   opacity: 0.7;
 }
 
-.tasks .task.is-complete .content {
+.todos .todo.is-complete .content {
   text-decoration: line-through;
 }

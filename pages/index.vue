@@ -33,7 +33,7 @@ export default {
       <button @click="addTodo">Add Todo</button>
     </div>
     <div class="tasks">
-      <Task
+      <Todo
         v-for="(todo, index) in $store.state.todos"
         :key="index"
         :todo="todo"
