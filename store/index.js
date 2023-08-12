@@ -1,23 +1,23 @@
 export const state = () => ({
-  tasks: [],
+  todos: [],
 });
 
 export const mutations = {
-  ADD_TODO(state, task) {
-    state.tasks = [
+  ADD_TODO(state, todo) {
+    state.todos = [
       {
-        content: task,
+        content: todo,
         done: false,
       },
-      ...state.tasks,
+      ...state.todos,
     ];
   },
 
-  REMOVE_TODO(state, task) {
-    state.tasks.splice(state.tasks.indexOf(task), 1);
+  REMOVE_TASK(state, todo) {
+    state.todos.splice(state.todos.indexOf(todo), 1);
   },
 
-  TOGGLE_TODO(state, task) {
-    task.done = !task.done;
+  TOGGLE_TASK(state, todo) {
+    todo.done = !todo.done;
   },
 };
